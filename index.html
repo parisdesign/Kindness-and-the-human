@@ -23,8 +23,8 @@
 </head>
 
 <body>
-    <header class="bg-black fixed w-[100%] z-20">
-        <div class="flex justify-between items-center px-7 py-4">
+    <header class="bg-black fixed w-[100%] z-30">
+        <div class="flex justify-between items-center max-lg:px-6 px-7 py-4">
             <ul class="flex flex-row max-lg:flex-wrap max-lg:justify-center lg:gap-20 max-lg:gap-4 text-2xl text-white">
                 <li><a href="#" class="hover:text-slate-400">Home</a></li>
                 <li><a href="#gameplay" class="hover:text-slate-400">Gameplay</a></li>
@@ -52,24 +52,22 @@
         </a>
 
         <video autoplay="autoplay" loop="loop" defaultMuted playsinline preload="auto" muted
-            class="w-[100%] lg:object-cover"
+            class="w-[100%] lg:object-cover max-md:pt-16"
             src="https://human-and-the-kindness.s3.eu-north-1.amazonaws.com/background.mp4" />
 
     </div>
 
     <div class="bg-gradient-to-b from-black from-40% via-[#0E3B34] via-70% to-[#0B9F88]">
         <!-- gameplay section -->
-        <div id="gameplay" class="px-20 max-lg:px-14">
+        <div id="gameplay" class="px-20 max-lg:px-6">
             <h1 class="text-6xl max-lg:text-4xl text-white pt-32 lg:pb-8">
                 Gameplay
             </h1>
             <div class="lg:flex">
                 <div class="flex flex-1 justify-center">
                     <video class="w-[80%] max-sm:w-[100%] aspect-square"
-                        src="https://human-and-the-kindness.s3.eu-north-1.amazonaws.com/demo.mp4"
-                        title="Demo" frameborder="0"
-                        controls
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        src="https://human-and-the-kindness.s3.eu-north-1.amazonaws.com/demo.mp4" title="Demo"
+                        frameborder="0" controls
                         allowfullscreen></video>
                 </div>
                 <div class="flex-1 justify-center self-center max-lg:pt-12">
@@ -101,7 +99,7 @@
             </div>
         </div>
 
-        <div id="pictures" class="px-20 max-lg:px-14">
+        <div id="pictures" class="px-20 max-lg:px-6">
             <h1 class="text-6xl max-lg:text-4xl text-white pt-32 lg:pb-8 max-lg:pb-4">
                 Pictures
             </h1>
@@ -115,7 +113,7 @@
             </div>
         </div>
 
-        <div id="features" class="px-20 max-lg:px-14">
+        <div id="features" class="px-20 max-lg:px-6">
             <h1 class="text-6xl max-lg:text-4xl text-white pt-32 lg:pb-8 max-lg:pb-4">
                 Features
             </h1>
@@ -132,7 +130,7 @@
             </ul>
         </div>
 
-        <div id="about" class="px-20 max-lg:px-14">
+        <div id="about" class="px-20 max-lg:px-6">
             <h1 class="text-6xl max-lg:text-4xl text-white pt-32 lg:pb-8 max-lg:pb-4">
                 The team
             </h1>
