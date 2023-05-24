@@ -23,9 +23,9 @@
 </head>
 
 <body>
-    <header class="bg-black fixed">
-        <div class="flex justify-between items-center px-7 py-3">
-            <ul class="flex flex-row gap-20 text-2xl text-white">
+    <header class="bg-black fixed w-[100%]">
+        <div class="flex justify-between items-center px-7 py-4">
+            <ul class="flex flex-row max-lg:flex-wrap max-lg:justify-center lg:gap-20 max-lg:gap-6 text-2xl text-white">
                 <li><a href="#" class="hover:text-slate-400">Play</a></li>
                 <li><a href="#gameplay" class="hover:text-slate-400">Gameplay</a></li>
                 <li><a href="#pictures" class="hover:text-slate-400">Pictures</a></li>
@@ -88,6 +88,14 @@
             <h1 class="text-6xl text-white pt-36 pb-8">
                 Pictures
             </h1>
+            <div class="flex flex-wrap gap-6 justify-center">
+                <img class="max-w-[600px]" src="./assets/pic1.webp" />
+                <img class="max-w-[600px]" src="./assets/pic2.webp" />
+                <img class="max-w-[600px]" src="./assets/pic3.webp" />
+                <img class="max-w-[600px]" src="./assets/pic4.webp" />
+                <img class="max-w-[600px]" src="./assets/pic5.webp" />
+                <img class="max-w-[600px]" src="./assets/pic6.webp" />
+            </div>
         </div>
 
         <div id="features" class="px-20">
@@ -112,13 +120,19 @@
                 About us
             </h1>
 
-            <div class="flex flex-wrap gap-14 pb-16 max-lg:justify-center">
-                <div class="flex items-center min-w-[450px]">
+            <div class="flex flex-wrap  max-lg:gap-20 pb-16 max-lg:justify-center justify-between">
+                <div class="flex flex-col items-center">
                     <div class="flex">
-                        <img class="flex w-44 h-44 rounded-full drop-shadow-2xl" src="./assets/stephano.png" />
+                        <img class="flex w-44 h-44 rounded-full" src="./assets/stephano.png" />
                     </div>
-                    <div class="ps-5 self-center">
-                        <p class="font-body text-white text-3xl">Stephano</p>
+                    <div class="pt-5 self-center text-center text-center">
+                        <span class="flex items-center gap-2 justify-center">
+                            <p class="font-body text-white text-3xl">Stephano</p>
+                            <svg class="w-10 h-10 bg-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#2C67B3"
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                            </svg>
+                        </span>
                         <p class="font-body mt-4 text-2xl">
                             3D Artist
                         </p>
@@ -130,14 +144,20 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex items-center min-w-[450px]">
+                <div class="flex flex-col items-center">
                     <div class="flex">
-                        <img class="flex w-44 h-44 rounded-full drop-shadow-2xl" src="./assets/parisa.png" />
+                        <img class="flex w-44 h-44 rounded-full" src="./assets/parisa.png" />
                     </div>
-                    <div class="ps-7 self-center">
-                        <p class="font-body text-white text-3xl">Parisa</p>
+                    <div class="pt-5 self-center text-center">
+                        <span class="flex items-center gap-2 justify-center">
+                            <p class="font-body text-white text-3xl">Parisa</p>
+                            <svg class="w-10 h-10 bg-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#2C67B3"
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                            </svg>
+                        </span>
                         <p class="font-body mt-4 text-2xl">
-                            Story and plot writer
+                            Story writer
                         </p>
                         <p class="font-body text-2xl">
                             Concept artist
@@ -147,12 +167,18 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex items-center min-w-[450px]">
+                <div class="flex flex-col items-center">
                     <div class="flex">
-                        <img class="flex w-44 h-44 rounded-full drop-shadow-2xl" src="./assets/celina.png" />
+                        <img class="flex w-44 h-44 rounded-full" src="./assets/celina.png" />
                     </div>
-                    <div class="ps-7 self-center">
-                        <p class="font-body text-white text-3xl">Celina</p>
+                    <div class="pt-5 self-center text-center">
+                        <span class="flex items-center gap-2 justify-center">
+                            <p class="font-body text-white text-3xl">Celina</p>
+                            <svg class="w-10 h-10 bg-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#2C67B3"
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                            </svg>
+                        </span>
                         <p class="font-body mt-4 text-2xl">
                             3D Artist
                         </p>
@@ -164,12 +190,18 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex items-center min-w-[450px]">
+                <div class="flex flex-col items-center">
                     <div class="flex">
-                        <img class="flex w-44 h-44 rounded-full drop-shadow-2xl" src="./assets/pontus.png" />
+                        <img class="flex w-44 h-44 rounded-full" src="./assets/pontus.png" />
                     </div>
-                    <div class="ps-7 self-center">
-                        <p class="font-body text-white text-3xl">Pontus</p>
+                    <div class="pt-5 self-center text-center">
+                        <span class="flex items-center gap-2 justify-center">
+                            <p class="font-body text-white text-3xl">Pontus</p>
+                            <svg class="w-10 h-10 bg-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#2C67B3"
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                            </svg>
+                        </span>
                         <p class="font-body mt-4 text-2xl">
                             Gameplay engineer
                         </p>
@@ -178,12 +210,18 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex items-center min-w-[450px]">
+                <div class="flex flex-col items-center">
                     <div class="flex">
-                        <img class="flex w-44 h-44 rounded-full drop-shadow-2xl" src="./assets/micheal.png" />
+                        <img class="flex w-44 h-44 rounded-full" src="./assets/micheal.png" />
                     </div>
-                    <div class="ps-7 self-center">
-                        <p class="font-body text-white text-3xl">Michael</p>
+                    <div class="pt-5 self-center text-center">
+                        <span class="flex items-center gap-2 justify-center">
+                            <p class="font-body text-white text-3xl">Micheal</p>
+                            <svg class="w-10 h-10 bg-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#2C67B3"
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                            </svg>
+                        </span>
                         <p class="font-body mt-4 text-2xl">
                             Gameplay engineer
                         </p>
@@ -194,35 +232,28 @@
                 </div>
             </div>
         </div>
+        <a href="#">
+            <div class="flex flex-1 justify-end -mb-4 cursor-pointer me-6">
+                <span class="flex self-center text-3xl text-white items-center">
+                    Back to top
+                    <svg class="ms-4" width="14" height="20" viewBox="0 0 14 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 18.5V1.5M7 1.5L1.5 10.5M7 1.5L13 10.5" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+                <img src="./assets/character.png" />
+            </div>
+        </a>
     </div>
 
-    <footer class="flex px-20 bg-black py-6 items-center">
+    <footer class="flex px-10 bg-black py-6 items-center">
         <h1 class="font-body text-3xl text-white">
             Follow us:
         </h1>
         <div class="flex flex-row ps-4">
             <a href="https://www.facebook.com/Kindness-and-the-Human-102101585425622" target="_blank">
-                <img src="./assets/twitch.png" alt="twitch">
-            </a>
-            <a href="https://www.facebook.com/Kindness-and-the-Human-102101585425622" target="_blank">
-                <img src="./assets/youtube.png" alt="youtube">
-            </a>
-
-            <a href="https://www.facebook.com/Kindness-and-the-Human-102101585425622" target="_blank">
-                <img src="./assets/tiktok.png" alt="tiktok">
-            </a>
-
-            <a href="https://www.instagram.com/kindnessandthehuman/" target="_blank">
-                <img src="./assets/instagram.png" alt="instagram">
-            </a>
-            <a href="https://twitter.com/KindnessHuman" target="_blank">
-                <img src="./assets/twitter.png" alt="twitter">
-            </a>
-            <a href="https://twitter.com/KindnessHuman" target="_blank">
-                <img src="./assets/linkedin.png" alt="linkedin">
-            </a>
-            <a href="https://www.facebook.com/Kindness-and-the-Human-102101585425622" target="_blank">
-                <img src="./assets/facebook.png" alt="facebook">
+                <img src="./assets/social_media.png" alt="social_media">
             </a>
         </div>
     </footer>
