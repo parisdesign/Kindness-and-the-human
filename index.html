@@ -25,7 +25,8 @@
 <body>
     <header class="bg-black fixed w-[100%] z-30">
         <div class="flex justify-between items-center max-lg:px-6 px-7 py-4">
-            <ul class="flex flex-row max-lg:flex-wrap max-lg:justify-center lg:gap-20 max-lg:gap-4 text-2xl max-lg:text-sm text-white">
+            <ul
+                class="flex flex-row max-lg:flex-wrap max-lg:justify-center lg:gap-20 max-lg:gap-4 text-2xl max-lg:text-sm text-white">
                 <li><a href="#" class="hover:text-slate-400">Home</a></li>
                 <li><a href="#gameplay" class="hover:text-slate-400">Gameplay</a></li>
                 <li><a href="#pictures" class="hover:text-slate-400">Pictures</a></li>
@@ -43,7 +44,7 @@
         </h1>
 
 
-        <a class="absolute self-center max-lg:pt-16 z-20" target="_blank"
+        <a class="absolute self-center max-lg:pt-16 z-20 max-md:-mt-24" target="_blank"
             href="https://drive.google.com/file/d/1lkOsxDk1e8-ojNdXanK9vv0ABkORYpcu/view?usp=sharing">
             <span style="text-shadow: 2px 2px 2px black;"
                 class="flex items-center font-body text-3xl max-lg:text-xl gap-4 text-white">
@@ -61,15 +62,14 @@
     <div class="bg-gradient-to-b from-black from-40% via-[#0E3B34] via-70% to-[#0B9F88]">
         <!-- gameplay section -->
         <div id="gameplay" class="px-20 max-lg:px-6">
-            <h1 class="text-6xl max-lg:text-4xl text-white pt-24 max-lg:pt-16 lg:pb-8">
+            <h1 class="text-6xl max-lg:text-4xl text-white pt-24 max-lg:pt-16 lg:pb-8 max-lg:pb-8">
                 Gameplay
             </h1>
             <div class="lg:flex">
-                <div class="flex flex-1 justify-center">
+                <div class="flex flex-1 justify-center justify-center items-center">
                     <video class="w-[80%] max-sm:w-[100%] aspect-square"
                         src="https://human-and-the-kindness.s3.eu-north-1.amazonaws.com/demo.mp4" title="Demo"
-                        frameborder="0" controls
-                        allowfullscreen></video>
+                        frameborder="0" controls allowfullscreen></video>
                 </div>
                 <div class="flex-1 justify-center self-center max-lg:pt-12">
                     <p class="font-body text-white text-2xl">
@@ -102,7 +102,7 @@
 
         <!-- pictures section -->
         <div id="pictures" class="px-20 max-lg:px-6">
-            <h1 class="text-6xl max-lg:text-4xl text-white pt-24 max-lg:pt-16 lg:pb-8 max-lg:pb-4">
+            <h1 class="text-6xl max-lg:text-4xl text-white pt-24 max-lg:pt-16 lg:pb-8 max-lg:pb-8">
                 Pictures
             </h1>
             <div class="flex flex-wrap gap-4 justify-center">
@@ -117,11 +117,11 @@
 
         <!-- features section -->
         <div id="features" class="px-20 max-lg:px-6">
-            <h1 class="text-6xl max-lg:text-4xl text-white pt-24 max-lg:pt-16 lg:pb-8 max-lg:pb-4">
+            <h1 class="text-6xl max-lg:text-4xl text-white pt-24 max-lg:pt-16 lg:pb-8 max-lg:pb-8">
                 Features
             </h1>
 
-            <ul class="font-body text-white text-3xl max-lg:text-xl space-y-4 pt-4">
+            <ul class="font-body text-white text-3xl max-lg:text-xl space-y-4">
                 <li>Suitable for almost all ages</li>
                 <li>Captivating graphics</li>
                 <li>Engaging story</li>
@@ -135,115 +135,116 @@
 
         <!-- the team section -->
         <div id="about" class="px-20 max-lg:px-6">
-            <h1 class="text-6xl max-lg:text-4xl text-white pt-24 max-lg:pt-16 lg:pb-8 max-lg:pb-4">
+            <h1 class="text-6xl max-lg:text-4xl text-white pt-24 max-lg:pt-16 lg:pb-8 max-lg:pb-8">
                 The team
             </h1>
 
             <div class="flex flex-wrap max-lg:gap-20 pb-16 max-lg:justify-center justify-between">
-                <a href="https://www.linkedin.com/in/stefano-scolari/">
-                    <div class="flex flex-col items-center">
-                        <div class="flex">
-                            <img class="flex w-44 h-44 rounded-full" src="./assets/stephano.png" />
-                        </div>
-                        <div class="pt-5 self-center text-center text-center">
-                            <span class="flex items-center gap-2 justify-center">
-                                <p class="font-body text-white text-3xl">Stephano</p>
-                                <img src="./assets/linkedin.png" />
-                            </span>
-                            <p class="font-body mt-4 text-2xl">
-                                3D Artist
-                            </p>
-                            <p class="font-body text-2xl">
-                                Level designer
-                            </p>
-                            <p class="font-body text-2xl">
-                                Technical artist
-                            </p>
-                        </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex">
+                        <img class="flex w-44 h-44 rounded-full" src="./assets/stephano.png" />
                     </div>
-                </a>
-                <a href="https://www.linkedin.com/in/parisraz/">
-                    <div class="flex flex-col items-center">
-                        <div class="flex">
-                            <img class="flex w-44 h-44 rounded-full" src="./assets/parisa.png" />
-                        </div>
-                        <div class="pt-5 self-center text-center">
-                            <span class="flex items-center gap-2 justify-center">
-                                <p class="font-body text-white text-3xl">Parisa</p>
+                    <div class="pt-5 self-center text-center text-center">
+                        <span class="flex items-center gap-2 justify-center">
+                            <p class="font-body text-white text-3xl">Stefano</p>
+                            <a href="https://www.linkedin.com/in/stefano-scolari/">
                                 <img src="./assets/linkedin.png" />
-                            </span>
-                            <p class="font-body mt-4 text-2xl">
-                                Story writer
-                            </p>
-                            <p class="font-body text-2xl">
-                                Concept artist
-                            </p>
-                            <p class="font-body text-2xl">
-                                Website designer
-                            </p>
-                        </div>
+                            </a>
+                        </span>
+                        <p class="font-body mt-4 text-2xl">
+                            3D Artist
+                        </p>
+                        <p class="font-body text-2xl">
+                            Level designer
+                        </p>
+                        <p class="font-body text-2xl">
+                            Technical artist
+                        </p>
                     </div>
-                </a>
-                <a href="https://www.linkedin.com/in/celina-s%C3%B6derman-772957152/">
-                    <div class="flex flex-col items-center">
-                        <div class="flex">
-                            <img class="flex w-44 h-44 rounded-full" src="./assets/celina.png" />
-                        </div>
-                        <div class="pt-5 self-center text-center">
-                            <span class="flex items-center gap-2 justify-center">
-                                <p class="font-body text-white text-3xl">Celina</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex">
+                        <img class="flex w-44 h-44 rounded-full" src="./assets/parisa.png" />
+                    </div>
+                    <div class="pt-5 self-center text-center">
+                        <span class="flex items-center gap-2 justify-center">
+                            <p class="font-body text-white text-3xl">Parisa</p>
+                            <a href="https://www.linkedin.com/in/parisraz/">
                                 <img src="./assets/linkedin.png" />
-                            </span>
-                            <p class="font-body mt-4 text-2xl">
-                                3D Artist
-                            </p>
-                            <p class="font-body text-2xl">
-                                Animator
-                            </p>
-                            <p class="font-body text-2xl">
-                                Game programmer
-                            </p>
-                        </div>
+                            </a>
+                        </span>
+                        <p class="font-body mt-4 text-2xl">
+                            Story writer
+                        </p>
+                        <p class="font-body text-2xl">
+                            Concept artist
+                        </p>
+                        <p class="font-body text-2xl">
+                            Website designer
+                        </p>
                     </div>
-                </a>
-                <a href="https://www.linkedin.com/in/pontus-pr%C3%BCzelius-7269ab18b/">
-                    <div class="flex flex-col items-center">
-                        <div class="flex">
-                            <img class="flex w-44 h-44 rounded-full" src="./assets/pontus.png" />
-                        </div>
-                        <div class="pt-5 self-center text-center">
-                            <span class="flex items-center gap-2 justify-center">
-                                <p class="font-body text-white text-3xl">Pontus</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex">
+                        <img class="flex w-44 h-44 rounded-full" src="./assets/celina.png" />
+                    </div>
+                    <div class="pt-5 self-center text-center">
+                        <span class="flex items-center gap-2 justify-center">
+                            <p class="font-body text-white text-3xl">Celina</p>
+                            <a href="https://www.linkedin.com/in/celina-s%C3%B6derman-772957152/">
                                 <img src="./assets/linkedin.png" />
-                            </span>
-                            <p class="font-body mt-4 text-2xl">
-                                Gameplay engineer
-                            </p>
-                            <p class="font-body text-2xl">
-                                Game programmer
-                            </p>
-                        </div>
+                            </a>
+                        </span>
+                        <p class="font-body mt-4 text-2xl">
+                            3D Artist
+                        </p>
+                        <p class="font-body text-2xl">
+                            Animator
+                        </p>
+                        <p class="font-body text-2xl">
+                            Game programmer
+                        </p>
                     </div>
-                </a>
-                <a href="https://www.linkedin.com/in/michael-morales-sundstedt-604491208/">
-                    <div class="flex flex-col items-center">
-                        <div class="flex">
-                            <img class="flex w-44 h-44 rounded-full" src="./assets/micheal.png" />
-                        </div>
-                        <div class="pt-5 self-center text-center">
-                            <span class="flex items-center gap-2 justify-center">
-                                <p class="font-body text-white text-3xl">Micheal</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex">
+                        <img class="flex w-44 h-44 rounded-full" src="./assets/pontus.png" />
+                    </div>
+                    <div class="pt-5 self-center text-center">
+                        <span class="flex items-center gap-2 justify-center">
+                            <p class="font-body text-white text-3xl">Pontus</p>
+                            <a href="https://www.linkedin.com/in/pontus-pr%C3%BCzelius-7269ab18b/">
                                 <img src="./assets/linkedin.png" />
-                            </span>
-                            <p class="font-body mt-4 text-2xl">
-                                Gameplay engineer
-                            </p>
-                            <p class="font-body text-2xl">
-                                Game programmer
-                            </p>
-                        </div>
+                            </a>
+                        </span>
+                        <p class="font-body mt-4 text-2xl">
+                            Gameplay engineer
+                        </p>
+                        <p class="font-body text-2xl">
+                            Game programmer
+                        </p>
                     </div>
+                </div>
                 </a>
+                <div class="flex flex-col items-center">
+                    <div class="flex">
+                        <img class="flex w-44 h-44 rounded-full" src="./assets/micheal.png" />
+                    </div>
+                    <div class="pt-5 self-center text-center">
+                        <span class="flex items-center gap-2 justify-center">
+                            <p class="font-body text-white text-3xl">Michael</p>
+                            <a href="https://www.linkedin.com/in/michael-morales-sundstedt-604491208/">
+                                <img src="./assets/linkedin.png" />
+                            </a>
+                        </span>
+                        <p class="font-body mt-4 text-2xl">
+                            Gameplay engineer
+                        </p>
+                        <p class="font-body text-2xl">
+                            Game programmer
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <a href="#">
