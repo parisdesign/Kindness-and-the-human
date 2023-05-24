@@ -25,7 +25,8 @@
 <body>
     <header class="bg-black fixed w-[100%] z-30">
         <div class="flex justify-between items-center max-lg:px-6 px-7 py-4">
-            <ul class="flex flex-row max-lg:flex-wrap max-lg:justify-center lg:gap-20 max-lg:gap-4 text-2xl max-lg:text-sm text-white">
+            <ul
+                class="flex flex-row max-lg:flex-wrap max-lg:justify-center lg:gap-20 max-lg:gap-4 text-2xl max-lg:text-sm text-white">
                 <li><a href="/Kindness-and-the-human/#" class="hover:text-slate-400">Home</a></li>
                 <li><a href="/Kindness-and-the-human/#gameplay" class="hover:text-slate-400">Gameplay</a></li>
                 <li><a href="/Kindness-and-the-human/#pictures" class="hover:text-slate-400">Pictures</a></li>
@@ -35,26 +36,39 @@
         </div>
     </header>
 
-    <div class="min-h-[100svh] pt-24 px-20 bg-gradient-to-b from-black from-40% via-[#0E3B34] via-70% to-[#0B9F88]">
-        <h1 class="font-body lg:text-5xl text-xl text-white">
+    <div
+        class="flex flex-col min-h-[100svh] pt-32 bg-gradient-to-b from-black from-40% via-[#0E3B34] via-70% to-[#0B9F88]">
+        <h1 class="max-lg:px-8 px-20 font-body lg:text-5xl text-xl text-white">
             Thank you for showing interest in our game!!
-            <h1 class="font-body lg:text-5xl text-xl text-white">
+            <h1 class="max-lg:px-8 px-20 font-body lg:text-5xl text-xl text-white">
                 We haven’t created our social media accounts yet but if you leave your email, we’ll let you know as soon
                 as
                 we have!
             </h1>
         </h1>
-        <div class="flex flex-col lg:flex-row gap-4 items-center pt-24">
-            <span class="h-16 pt-4 text-4xl text-white">
+        <div class="px-20 max-lg:px-8 flex flex-col lg:flex-row gap-4 items-center lg:pt-24 pt-8">
+            <span class="h-16 pt-4 text-4xl text-white max-lg:self-start">
                 Email:
             </span>
-            <input type="text" name="email" id="email"
-                class="h-16 lg:w-1/3 w-[100%] text-4xl font-body border-2 border-black">
-            <button class="h-16 text-4xl px-4 text-white">Send</button>
+            <input type="text" name="email" id="email" class="h-16 lg:w-1/3 w-[100%] text-4xl font-body rounded-lg">
+            <button id="button" class="h-16 text-4xl px-4 text-white max-lg:self-end">Send</button>
         </div>
-
-        <img src="./assets/bg_newsletter.png" class="absolute bottom-0 end-0" />
+        <div class="flex flex-1"></div>
+        <img src="./assets/bg_newsletter.png" class="flex self-end lg:w-1/2 w-[100%] object-cover" />
     </div>
 </body>
+<script>
+    const email = document.getElementById('email');
+    const button = document.getElementById('button');
+
+    button.addEventListener('click', () => {
+        if (email.value === '') {
+            alert('Please enter your email');
+        } else {
+            alert('Thank you for subscribing!');
+            email.value = "";
+        }
+    });
+</script>
 
 </html>
