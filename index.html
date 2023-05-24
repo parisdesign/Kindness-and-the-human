@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <header class="bg-black fixed w-[100%]">
+    <header class="bg-black fixed w-[100%] z-20">
         <div class="flex justify-between items-center px-7 py-4">
             <ul class="flex flex-row max-lg:flex-wrap max-lg:justify-center lg:gap-20 max-lg:gap-6 text-2xl text-white">
                 <li><a href="#" class="hover:text-slate-400">Play</a></li>
@@ -36,10 +36,21 @@
     </header>
 
     <!-- video section -->
-    <div class="bg-slate-900 h-[100svh] px-20">
-        <h1 class="font-body text-center text-5xl text-white pt-40">
+    <div class="flex relative bg-slate-900 h-[100svh] px-20 justify-center">
+        <h1 class="absolute start-20 top-44 font-body text-5xl text-white">
             Kindness and the human
         </h1>
+
+        <a class="self-center" href="./newsletter.html">
+            <span class="flex items-center font-body text-4xl gap-4 text-white">
+                Play
+                <svg width="17" height="23" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1 19.5725V3.42754C1 1.79297 2.8544 0.848656 4.17634 1.81007L15.276 9.88253C16.3742 10.6812 16.3742 12.3188 15.276 13.1175L4.17634 21.1899C2.8544 22.1513 1 21.207 1 19.5725Z"
+                        fill="black" stroke="black" />
+                </svg>
+            </span>
+        </a>
     </div>
 
     <div class="bg-gradient-to-b from-black from-40% via-[#0E3B34] via-70% to-[#0B9F88]">
@@ -50,8 +61,9 @@
             </h1>
             <div class="lg:flex pt-16">
                 <div class="flex flex-1 justify-center">
-                    <iframe class="w-[80%] max-sm:w-[100%] aspect-square" src="https://www.youtube.com/embed/xXfdRvtFTd0?rel=0"
-                        title="YouTube video player" frameborder="0"
+                    <iframe class="w-[80%] max-sm:w-[100%] aspect-square"
+                        src="https://www.youtube.com/embed/xXfdRvtFTd0?rel=0" title="YouTube video player"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
@@ -252,7 +264,7 @@
             Follow us:
         </h1>
         <div class="flex flex-row ps-2">
-            <a href="https://www.facebook.com/Kindness-and-the-Human-102101585425622" target="_blank">
+            <a href="./newsletter.html" target="_blank">
                 <img src="./assets/social_media.png" alt="social_media">
             </a>
         </div>
